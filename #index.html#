@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/script.js" ></script>
+  </head>
+  <body class="h-100">
+  <div class="col-md-1 h-100 align-items-center fullHeight"></div>
+  <div class="h-100 align-items-center fullHeight">
+    <div class="col-md-3 align-items-center text-right fullHeight" id="leader"><p class="leader row">Alexis</p></div></div>
+  <div class="align-items-center h-100 fullHeight">
+  <div class="col-md-8 h-100 fullHeight" id="actions">
+  <div class="action" id="atWork"><p class="action">at work.</p></div>
+  <div class="action" id="atPlay"><p class="action">at play.</p></div>
+  <div class="action" id="atHome"><p class="action">at home.</p></div>    
+  <div class="action" id="behindTheLens"><p class="action">behind the lens.</p></div>
+  <div class="action" id="photography"><p class="action">photography.</p></div>
+  <div class="action" id="teaching"><p class="action">teaching.</p></div>
+  <div class="action" id="writing"><p class="action">writing.</p></div>
+  <div class="action" id="experimenting"><p class="action">experimenting.</p></div>
+  </div>
+  </div>
+  </body>
+
+</html>
