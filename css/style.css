@@ -8,8 +8,66 @@ html,body{
     width:100%;
     margin:0;
     height:100%;
+    font-family: 'Poppins', sans-serif;
 }
 
+.mainHeight{
+    height: 90%;
+}
+
+.footerHeight{
+    height: 10%;
+}
 .fullHeight{
     height: 100%;
+}
+
+
+
+html {
+    font-size: 1rem;
+}
+
+#leader{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+.action{
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+}
+
+img{
+    width: 100%;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+    #leader{    
+        font-size: 2rem;    
+    }
+    .action{    
+        font-size: 2rem;    
+    }
+
+    
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+
 }
