@@ -30,44 +30,34 @@ html {
 
 #leader{
     font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .action{
     font-family: 'Poppins', sans-serif;
+    font-size: .7em;
+    font-weight: lighter;
+}
+
+.action:hover{
+    font-weight: bold;
 }
 
 .text-responsive {
-    font-size: calc(100% + 1vw + 1vh);
+    font-size: calc(90% + .9vw + .9vh);
 }
 
 img{
     width: 100%;
 }
 
-@include media-breakpoint-up(sm) {
-    html {
-        font-size: 1.2rem;
-    }
+.splashImages{
+    visibility: none;
 }
 
-@include media-breakpoint-up(md) {
-    html {
-        font-size: 1.4rem;
-    }
-    #leader{    
-        font-size: 2rem;    
-    }
-    .action{    
-        font-size: 2rem;    
-    }
 
-    
-}
-
-@include media-breakpoint-up(lg) {
-    html {
-        font-size: 1.6rem;
+@media (min-width: @screen-sm-min) {
+    #preview{
+	visibility: visible;
     }
-
 }
