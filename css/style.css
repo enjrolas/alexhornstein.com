@@ -52,7 +52,7 @@ img{
 }
 
 .splashImages{
-    visibility: hidden;
+    display:none;
 }
 
 

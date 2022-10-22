@@ -1,0 +1,11 @@
+--2022-10-22 14:29:09--  http://www.fmwconcepts.com/imagemagick/downloadcounter.php?scriptname=aspectcrop
+Resolving www.fmwconcepts.com (www.fmwconcepts.com)... 160.153.52.230
+Connecting to www.fmwconcepts.com (www.fmwconcepts.com)|160.153.52.230|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘downloadcounter.php?scriptname=aspectcrop’
+
+downloadcounter.php?scriptname=aspectcrop              [<=>                                                                                                              ]       0  --.-KB/s               downloadcounter.php?scriptname=aspectcrop              [ <=>                                                                                                             ]      17  --.-KB/s    in 0s      
+
+2022-10-22 14:29:09 (415 KB/s) - ‘downloadcounter.php?scriptname=aspectcrop’ saved [17]
+

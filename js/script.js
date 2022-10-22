@@ -16,28 +16,32 @@ $( document ).ready(function() {
     var atPlayPhotos=$("img.atPlay");
     var takingPicturesPhotos=$("img.takingPictures");
 
-    $("#atWork").mouseover(function(){
-	var index=0;
-	thumbnails.each(function(){
-	    this.src=atWorkPhotos[index].src;
-	    index++;
+    var categories=['atWork', 'atPlay', 'takingPictures'];
+    var photoDictionary={};
+    var numPhotos=9;
+    categories.forEach(function(category){
+	var photoURLs=[];
+	for(let i=1;i<=numPhotos;i++)
+	{
+	    console.log(category);
+	    var imageSource="images/"+category+i+".jpg";
+	    photoURLs.push(imageSource);
+	    //preload image
+	    console.log("preloading "+imageSource);
+            $('<img />').attr('src',imageSource).appendTo('body').addClass(category).css('display','none');
+	}
+	photoDictionary[category]=photoURLs;
+	
+	//add mouseover function to each category
+	$("#"+category).mouseover(function(){
+	    var index=0;
+	    var categoryImages=$("."+category);
+	    thumbnails.each(function(){
+		this.src=categoryImages[index].src;
+		index++;
+	    });
 	});
     });
     
-    $("#atPlay").mouseover(function(){
-	var index=0;
-	thumbnails.each(function(){
-	    this.src=atPlayPhotos[index].src;
-	    index++;
-	});	
-    });
-
-    $("#takingPictures").mouseover(function(){
-	var index=0;
-	thumbnails.each(function(){
-	    this.src=takingPicturesPhotos[index].src;
-	    index++;
-	});	
-    });
 });
 
