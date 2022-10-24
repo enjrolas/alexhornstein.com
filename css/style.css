@@ -55,6 +55,10 @@ img{
     display:none;
 }
 
+#bench{
+    display:none;
+}
+
 
 @media (min-width: @screen-sm-min) {
     #preview{

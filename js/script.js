@@ -11,7 +11,7 @@ $( document ).ready(function() {
 	}, 5000);
     }
 
-    var thumbnails=$("img.thumbnail");
+    var thumbnails=$(".thumbnail");
     var atWorkPhotos=$("img.atWork");
     var atPlayPhotos=$("img.atPlay");
     var takingPicturesPhotos=$("img.takingPictures");
@@ -34,11 +34,10 @@ $( document ).ready(function() {
 	
 	//add mouseover function to each category
 	$("#"+category).mouseover(function(){
-	    var index=0;
 	    var categoryImages=$("."+category);
-	    thumbnails.each(function(){
-		this.src=categoryImages[index].src;
-		index++;
+	    thumbnails.each(function(index, element){
+		$(element).children().css("display","none").appendTo("#bench");
+		$(element).append($(categoryImages[index]).css("display", "initial")).fadeIn(1000);
 	    });
 	});
     });
