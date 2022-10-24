@@ -11,13 +11,7 @@ $( document ).ready(function() {
 	}, 5000);
     }
 
-    var thumbnails=$(".thumbnail");
-    var atWorkPhotos=$("img.atWork");
-    var atPlayPhotos=$("img.atPlay");
-    var takingPicturesPhotos=$("img.takingPictures");
-
-    var categories=['atWork', 'atPlay', 'atHome', 'behindTheLens', 'takingPictures', 'teaching', 'writing', 'tinkering'];
-    var photoDictionary={};
+    var categories=['atWork', 'atPlay', 'atHome', 'behindTheLens', 'takingPictures', 'teaching', 'writing', 'tinkering', 'about'];
     var numPhotos=9;
     categories.forEach(function(category){
 	var photoURLs=[];
@@ -41,6 +35,8 @@ $( document ).ready(function() {
 	    });
 	});
     });
+
+    
     
 });
 
