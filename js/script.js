@@ -16,7 +16,7 @@ $( document ).ready(function() {
     var atPlayPhotos=$("img.atPlay");
     var takingPicturesPhotos=$("img.takingPictures");
 
-    var categories=['atWork', 'atPlay', 'takingPictures'];
+    var categories=['atWork', 'atPlay', 'atHome', 'behindTheLens', 'takingPictures', 'teaching', 'writing', 'tinkering'];
     var photoDictionary={};
     var numPhotos=9;
     categories.forEach(function(category){
