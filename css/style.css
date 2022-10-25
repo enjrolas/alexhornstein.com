@@ -43,6 +43,10 @@ html {
     font-weight: bold;
 }
 
+#about:hover{
+    font-style:italic;
+}
+
 .text-responsive {
     font-size: calc(90% + .9vw + .9vh);
 }

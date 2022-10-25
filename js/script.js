@@ -13,19 +13,19 @@ $( document ).ready(function() {
 
     var categories=['atWork', 'atPlay', 'atHome', 'behindTheLens', 'takingPictures', 'teaching', 'writing', 'tinkering', 'about'];
     var numPhotos=9;
+    var thumbnails=$(".thumbnail");  //all the thumbnail image spots
+    
     categories.forEach(function(category){
 	var photoURLs=[];
 	for(let i=1;i<=numPhotos;i++)
 	{
 	    console.log(category);
 	    var imageSource="images/"+category+i+".jpg";
-	    photoURLs.push(imageSource);
 	    //preload image
 	    console.log("preloading "+imageSource);
             $('<img />').attr('src',imageSource).appendTo('body').addClass(category).css('display','none');
 	}
-	photoDictionary[category]=photoURLs;
-	
+
 	//add mouseover function to each category
 	$("#"+category).mouseover(function(){
 	    var categoryImages=$("."+category);
